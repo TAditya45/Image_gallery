@@ -72,3 +72,7 @@ Run the GUI application:
     
 
 Note: Before running the GUI application, make sure to set the correct path for the image directory in the database.py file.
+
+
+
+PS : Please check the ETC folder :)
