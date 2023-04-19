@@ -6,11 +6,11 @@ import os
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 
 # create database and collection
-mydb = client["mydatabase"]
+mydb = client["productid"]
 mycol = mydb["images"]
 
 # specify the path to the directory containing the images
-path = "/path/to/images/"
+path = "images"
 
 # loop through all the subdirectories and files in the specified directory
 for root, dirs, files in os.walk(path):
