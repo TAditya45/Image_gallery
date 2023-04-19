@@ -10,40 +10,40 @@ Project Documentation
 Introduction:
 
 
-The project is a desktop application that provides a GUI for an image gallery and analytics gallery. The data presented in the application is sourced from a MongoDB database, which is populated with preprocessed images stored in the 'images' directory.
+        The project is a desktop application that provides a GUI for an image gallery and analytics gallery. The data presented in the application is sourced from a MongoDB database, which is populated with preprocessed images stored in the 'images' directory.
 
 Files:
 
 
-main.py: The main file of the application that launches the GUI.
+        main.py: The main file of the application that launches the GUI.
 
-database.py: A Python file that assumes all preprocessed images are present in the 'images' directory and creates a MongoDB database from them.
+        database.py: A Python file that assumes all preprocessed images are present in the 'images' directory and creates a MongoDB database from them.
 
-imagegallery.py: A Python file that displays all images from the MongoDB database with a red or green line underneath each image to signify 'bad' or 'good' status.
+        imagegallery.py: A Python file that displays all images from the MongoDB database with a red or green line underneath each image to signify 'bad' or 'good' status.
 
-product_analytics.py: A Python file that displays product analytics data sourced from the MongoDB database.
+        product_analytics.py: A Python file that displays product analytics data sourced from the MongoDB database.
 
 
 MongoDB Database:
 
 
-The MongoDB database is structured as follows:
+        The MongoDB database is structured as follows:
 
-sku_id: The SKU ID of the product associated with the image.
+        sku_id: The SKU ID of the product associated with the image.
 
-order_id: The order ID of the product associated with the image.
+        order_id: The order ID of the product associated with the image.
 
-status: The status of the image - 'good' or 'bad'.
+        status: The status of the image - 'good' or 'bad'.
 
-image_data: The binary data of the image.
+        image_data: The binary data of the image.
 
-image_path: The file path of the image.
+        image_path: The file path of the image.
 
 
 To run this application 
 
 
-Here are the commands that need to be run to set up and run this repository:
+    Here are the commands that need to be run to set up and run this repository:
 
 
 Create a virtual environment (assuming you have Python 3 installed):
@@ -68,5 +68,7 @@ Install the required packages:
 Run the GUI application:
 
     python main.py
+    
+    
 
 Note: Before running the GUI application, make sure to set the correct path for the image directory in the database.py file.
