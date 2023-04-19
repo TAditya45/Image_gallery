@@ -1,0 +1,14 @@
+    As per the assignment document, I have assumed that I randomly assigned 10 - 20 images status "bad" and based on that,
+    I have created a database using the MongoDB document type. The image directory is also an assumption only for this project.
+
+    In real-time applications, the image status will be processed when the image is stored in the database. For this purpose, 
+    I have created an "etc" folder which consists of "database.py" for a real-time application.
+
+
+
+    The above database.py is a Python script that connects to a MongoDB server and creates a new database and collection to store information about image files. 
+    It uses the os library to traverse through a directory containing image files and extracts the directory name as SKUID and file name as unit id. 
+    It then reads the contents of each image file and checks if it has a red or green line to determine the status of the image. Based on this, 
+    it sets the status of the image as "good" or "bad". Finally, it inserts a document into the MongoDB collection for each 
+    image file containing the SKUID, unit id, status, and path of the image file. The script also prints out the ID of the inserted document for each image file. 
+    This code can be useful for automating the process of storing and tracking information about images in a MongoDB database.
