@@ -1,5 +1,5 @@
-    As per the assignment document, I have assumed that I randomly assigned 10 - 20 images status "bad" and based on that,
-    I have created a database using the MongoDB document type. The image directory is also an assumption only for this project.
+    I have assumed that there will be 10-20 product images which are considered as bad due to that I randomly assigned 10 - 20 images status  as "bad" and based on that,
+    I have created a database using the MongoDB document type. The image directory is contains the images of the products so make sure you have images in the image directory.
 
     In real-time applications, the image status will be processed when the image is stored in the database. For this purpose, 
     I have created an "etc" folder which consists of "database.py" for a real-time application.
